@@ -1,3 +1,44 @@
+# Online Voting System
+
+> A Java-based web application for conducting secure, transparent, and tamper-proof elections online.
+
+## What is this?
+
+Most voting systems are either paper-based or overly complex enterprise tools.
+This project is a lightweight, full-stack Java application that brings the core
+of a real election system — voter registration, admin control, live results —
+into a clean, deployable web app.
+
+---
+
+## How it works
+
+```
+Voter                          Admin
+  |                              |
+  | Register / Login             | Login to Admin Panel
+  |                              |
+  | Browse Candidates            | Add Candidates
+  |                              | Create Elections
+  | Cast Vote                    | Monitor Progress
+  |                              |
+  | View Results                 | View Final Results
+  |                              |
+  └──────────── MySQL DB ────────┘
+               (via JDBC)
+```
+
+---
+
+## Stack
+
+```
+Frontend   →   HTML, CSS
+Backend    →   Java, Java Servlets
+Database   →   MySQL (JDBC)
+Server     →   Apache Tomcat
+```
+
 ---
 
 ## Run it locally
